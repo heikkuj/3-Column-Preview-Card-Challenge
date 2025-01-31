@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+/* Global styling */
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+    margin: 1em 0;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+    margin: 10px 0px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 1em;
+
+    border: none;
+    width: 155px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+/* Sedan card */
+
+#sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+
+/* SUV card */
+
+#suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+
+/* Luxury card */
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* MOBILE VIEW */
+
+@media (width <= 455px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 2em;
+        padding: 0px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .content {
+        padding: 3em;
+        line-height: 2em;
+    
+    }
+
+}
+
+
+/* DESKTOP VIEW */
+
+@media (width >= 455px) {
+    body {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-self: center;
+        align-self: center;
+
+        margin: 2em;
+        padding: 0px;
+        max-width: 950px;
+
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .content {
+        padding: 3em;
+        line-height: 2em;
+    
+    }
+}
